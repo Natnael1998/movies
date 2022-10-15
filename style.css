@@ -103,6 +103,7 @@ button {
     background-color: rgb(250, 215, 248);
     border-radius: 30px;
     color: rgb(0, 0, 0);
+    transition: all 300ms ease;
 
 }
 
@@ -112,7 +113,7 @@ button:hover {
 }
 
 button:active {
-    background-color: #00ff00;
+    background-color: #242424;
 }
 .movie:hover{
     
@@ -124,3 +125,13 @@ transform: scale(1.2);
 
 
 }
+button:hover{
+    
+    transform: scale(1.2);
+    
+    }
+button:active{
+        transform: scale(1.0);
+    
+    
+    }
