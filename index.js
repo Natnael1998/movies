@@ -8,8 +8,17 @@ const options = {
 
 
 function nati(){
+    
+
+    let loading = document.querySelector(".loading")
+    loading.classList+= " loading--visible"
+    
+    
+    
 
     let input = document.getElementById("in").value
+   
+      
     
     let api = fetch(`https://imdb8.p.rapidapi.com/auto-complete?q=${input}`, options)
 
@@ -22,12 +31,18 @@ function nati(){
             console.log(item)
             const name = item.l
             const poster = item.i.imageUrl
+            loading.remove()
             
             
             const movie = `<div class="movie"><img src="${poster}"> <p>${name}</p></div> `
             document.querySelector(".movies").innerHTML += movie
+            
+            
         })
     })
 	.catch(err => console.error(err));
     
+    
 }
+
+

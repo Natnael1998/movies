@@ -25,17 +25,46 @@
     flex-wrap: wrap;
     justify-content: center;
     
-    
-   
+}
 
-
-
-
-
-
-
+.fa-spinner{
+    animation: rotation 2000ms infinite linear;
+    font-size: 100px;
+    margin-top: 50px;
 
 }
+@keyframes rotation {
+    0%{
+        transform: rotate(0);
+
+    }
+    100%{
+        transform: rotate(360deg);
+        
+    }
+}
+ .loading{
+    
+    display: none;
+    
+   
+  
+}
+.loading--visible{
+    display: block;
+    text-align: center;
+    color: #242424;
+}
+
+
+
+
+
+
+
+
+
+
 
 img {
     height: 250px !important;
